@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/Task"
+        android:icon="@drawable/ic_baseline_task_24"
+        android:title="Tasks" />
+
+    <item
+        android:id="@+id/dark_mode"
+        android:icon="@drawable/ic_baseline_toggle_on_24"
+        android:title="Dark Mode" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:title="Logout" />
+</menu>

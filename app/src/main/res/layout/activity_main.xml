@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_Color"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/laybar"
+        layout="@layout/toolbar_back" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/laybar"
+        >
+        <FrameLayout
+            android:id="@+id/f_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:id="@+id/bottombar"
+            android:theme="@style/Theme.Light"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="10dp"
+            app:fabCradleVerticalOffset="10dp"
+            >
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bot_nav"
+                android:theme="@style/Theme.Light"
+                android:layout_marginEnd="16dp"
+                app:menu="@menu/bottom_menu"
+                android:background="@drawable/transperent_background"
+                />
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addtask_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@id/bottombar"
+            android:src="@drawable/ic_baseline_add_24"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </RelativeLayout>
+
+
+

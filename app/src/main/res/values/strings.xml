@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TODO</string>
+    <string name="fp_des">Please enter the email address you\'d like your password to reset information sent to</string>
+</resources>

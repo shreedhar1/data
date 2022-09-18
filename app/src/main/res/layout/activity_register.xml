@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.Light"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dlblue"
+    android:orientation="vertical"
+    tools:context=".Register">
+
+  <TextView
+      android:id="@+id/Registration_page"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_above="@+id/lay1"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="10dp"
+      android:fontFamily="@font/poppins_light"
+      android:gravity="center"
+      android:text="Register your account"
+      android:textColor="@color/white"
+      android:textSize="30dp" />
+
+
+  <RelativeLayout
+      android:id="@+id/lay1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="0dp"
+      android:layout_marginEnd="20dp"
+      android:layout_marginBottom="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="4dp">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="32.5dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Full Name"
+            android:backgroundTint="@color/tgrey"
+            android:textColorHint="@color/tgrey"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Age"
+            android:backgroundTint="@color/tgrey"
+            android:textColorHint="@color/tgrey"
+            android:inputType="number"
+            android:textColor="@color/black" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Date of Birth"
+            android:backgroundTint="@color/tgrey"
+            android:textColorHint="@color/tgrey"
+            android:textColor="@color/black"
+            android:textIsSelectable="true" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Email ID"
+            android:backgroundTint="@color/tgrey"
+            android:textColorHint="@color/tgrey"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Password"
+            android:backgroundTint="@color/tgrey"
+            android:textColorHint="@color/tgrey"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_medium"
+              android:textColor="@color/tgrey"
+              android:text="Already have an account? " />
+
+          <TextView
+              android:id="@+id/login_page"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_medium"
+              android:text="Login here"
+              android:textColor="@color/blue" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reg_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/dlblue"
+            app:cardCornerRadius="4dp">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="20dp"
+              android:layout_marginEnd="20dp"
+              android:fontFamily="@font/poppins_medium"
+              android:padding="10dp"
+              android:text="Register"
+              android:textColor="@color/white"
+              android:textSize="18dp" />
+
+        </androidx.cardview.widget.CardView>
+      </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/dlblue"
+        app:cardCornerRadius="50dp">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:layout_gravity="center"
+          android:backgroundTint="@color/dlblue"
+          app:cardCornerRadius="50dp">
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center"
+            android:src="@drawable/user_image" />
+      </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+
+  </RelativeLayout>
+
+
+
+
+<!--  <LinearLayout-->
+<!--      android:id="@+id/lay3"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="wrap_content"-->
+<!--      android:layout_alignParentBottom="true"-->
+<!--      android:layout_gravity="bottom"-->
+<!--      android:layout_marginBottom="20dp"-->
+<!--      android:gravity="center"-->
+<!--      android:orientation="horizontal">-->
+
+
+<!--    <Button-->
+<!--        android:id="@+id/login"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:text="Login" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/register"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:text="Register" />-->
+
+<!--  </LinearLayout>-->
+
+
+  </RelativeLayout>
